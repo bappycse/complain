@@ -1,0 +1,811 @@
+<!doctype html>
+<html class="fixed">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>Dashboard | Porto Admin - Responsive HTML5 Template 1.5.2</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.css" />
+		<link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.theme.css" />
+		<link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+		<link rel="stylesheet" href="assets/vendor/morris.js/morris.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+		<!-- Head Libs -->
+		<script src="assets/vendor/modernizr/modernizr.js"></script>
+		<style>
+			@media(min-width:1199px) and (max-width:1400px){
+				.other-services h5{
+					font-size:11px;
+				}
+
+			}
+		</style>
+
+
+	</head>
+	<body>
+		<section class="body">
+
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="../" class="logo">
+						<img src="assets/images/logo.png" height="35" alt="Porto Admin" />
+					</a>
+					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+
+				<!-- start: search & user box -->
+				<div class="header-right">
+
+					<span class="separator"></span>
+
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name">John Doe Junior</span>
+								<span class="role">administrator</span>
+							</div>
+
+							<i class="fa custom-caret"></i>
+						</a>
+
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> My Profile</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="fa fa-power-off"></i> Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+					<div class="sidebar-header">
+						<div class="sidebar-title">
+							Navigation
+						</div>
+						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+						</div>
+					</div>
+				
+					<div class="nano">
+						<div class="nano-content">
+							<nav id="menu" class="nav-main" role="navigation">
+								<ul class="nav nav-main">
+									<li class="nav-active">
+										<a href="index.html">
+											<i class="fa fa-home" aria-hidden="true"></i>
+											<span>Dashboard</span>
+										</a>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-columns" aria-hidden="true"></i>
+											<span>Admin Controls</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="/admin/admin.php">
+													Manage Admins
+												</a>
+											</li>
+											<li>
+												<a href="/admin/admin_email.php">
+													Manage Emails
+												</a>
+
+											<li>
+											<a href="/admin/admin_logs.php">
+													View Members Logs
+												</a>
+											</li>
+											<li>
+												<a href="/admin/contest_export.php">
+													Export Contest Spreadsheet
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-copy" aria-hidden="true"></i>
+											<span>MLM Controls</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="/admin/mlm_pulldown.php">
+													Manage MLM
+												</a>
+											</li>
+											<li>
+												<a href="/admin/commision_rules.php">
+													Manage Commision
+												</a>
+											</li>
+											<li>
+												<a href="/admin/mlm_export.php">
+													Export Tasks
+												</a>
+											</li>
+
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-tasks" aria-hidden="true"></i>
+											<span>Ecommerce Controls</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="/shop/admin/index.php">
+													Manage Shop
+												</a>
+											</li>
+											<li>
+												<a href="/admin/online_order.php">
+													Manage Customer / Quick Order
+												</a>
+
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-list-alt" aria-hidden="true"></i>
+											<span>STW Management</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="/admin/stw_reports.php">
+													STW Reports
+												</a>
+											</li>
+											<li>
+												<a href="/admin/csv_uploader_parser.php">
+													Upload STW File
+												</a>
+											</li>
+
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-table" aria-hidden="true"></i>
+											<span>Member Services</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="/admin/uploadpdf.php">
+													Manage Member Docs
+												</a>
+											</li>
+											<li>
+												<a href="/admin/newsletter.php">
+													Manage News Letter
+												</a>
+											</li>
+											<li>
+												<a href="/admin/news.php">
+													Manage News
+												</a>
+											</li>
+											<li>
+												<a href="/admin/inquire.php">
+													Manage STW Inquiries
+												</a>
+											</li>
+											<li>
+												<a href="/admin/inquire2.php">
+													Manage Cruise Inquiries
+												</a>
+											</li>
+											<li>
+												<a href="/admin/mlm_errors.php">
+													MLM Error Types
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-table" aria-hidden="true"></i>
+											<span>Import / Export Functions</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="/admin/csv_pulldowns.php">
+													Export CSV's
+												</a>
+											</li>
+											<li>
+												<a href="/admin/bw_sync.php">
+													Synchronize w/BWGold
+												</a>
+											</li>
+											<li>
+												<a href="/admin/call_log.php">
+													Import Call Log
+												</a>
+											</li>
+											<li>
+												<a href="/admin/update_ec_id.php">
+													Update Ec ID
+												</a>
+											</li>
+
+										</ul>
+									</li>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-table" aria-hidden="true"></i>
+											<span>Other Services</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="/admin/script4.php">
+													Adjust Non-Member Purchases
+												</a>
+											</li>
+											<li>
+												<a href="/admin/tools.php">
+													Tool Link Management
+												</a>
+											</li>
+											<li>
+												<a href="/admin/videos.php">
+													Video Link Management
+												</a>
+											</li>
+											<li>
+												<a href="/admin/set_global_password.php">
+													Set Global Password
+												</a>
+											</li>
+											<li>
+												<a href="/admin/per_member_commissions.php">
+													Per Member Commissions
+												</a>
+											</li>
+											<li>
+												<a href="/admin/newsletter_new.php">
+													Newsletter Management
+												</a>
+											</li>
+											<li>
+												<a href="http://www.sharethewealthsalons.com/forum/admin/index.php">
+													Discussion Forum Admin
+												</a>
+											</li>
+											<li>
+												<a href="/admin/logout.php">
+													Logout Admin
+												</a>
+											</li>
+											<li>
+												<a href="/admin/fposts.php">
+													Manage Forum Posts
+												</a>
+											</li>
+											<li>
+												<a href="/admin/ecco.php">
+													ECCO Report
+												</a>
+											</li>
+											<li>
+												<a href="/admin/cpco.php">
+													CPCO Report
+												</a>
+											</li>
+											<li>
+												<a href="/price_updater.php">
+													Price Updater
+												</a>
+											</li>
+										</ul>
+									</li>
+
+
+								</ul>
+							</nav>
+				
+							<hr class="separator" />
+				
+							<div class="sidebar-widget widget-tasks">
+								<div class="widget-header">
+									<h6>Projects</h6>
+									<div class="widget-toggle">+</div>
+								</div>
+								<div class="widget-content">
+									<ul class="list-unstyled m-none">
+										<li><a href="#">Porto HTML5 Template</a></li>
+										<li><a href="#">Tucson Template</a></li>
+										<li><a href="#">Porto Admin</a></li>
+									</ul>
+								</div>
+							</div>
+				
+							<hr class="separator" />
+				
+							<div class="sidebar-widget widget-stats">
+								<div class="widget-header">
+									<h6>Company Stats</h6>
+									<div class="widget-toggle">+</div>
+								</div>
+								<div class="widget-content">
+									<ul>
+										<li>
+											<span class="stats-title">Stat 1</span>
+											<span class="stats-complete">85%</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-primary progress-without-number" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+													<span class="sr-only">85% Complete</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<span class="stats-title">Stat 2</span>
+											<span class="stats-complete">70%</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-primary progress-without-number" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+													<span class="sr-only">70% Complete</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<span class="stats-title">Stat 3</span>
+											<span class="stats-complete">2%</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-primary progress-without-number" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
+													<span class="sr-only">2% Complete</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+				
+						<script>
+							// Preserve Scroll Position
+							if (typeof localStorage !== 'undefined') {
+								if (localStorage.getItem('sidebar-left-position') !== null) {
+									var initialPosition = localStorage.getItem('sidebar-left-position'),
+										sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+									
+									sidebarLeft.scrollTop = initialPosition;
+								}
+							}
+						</script>
+				
+					</div>
+				
+				</aside>
+				<!-- end: sidebar -->
+
+				<div role="main" class="content-body">
+					<header class="page-header">
+						<h2>Dashboard</h2>
+					
+						<div class="right-wrapper pull-right">
+							<ol class="breadcrumbs">
+								<li>
+									<a href="index.html">
+										<i class="fa fa-home"></i>
+									</a>
+								</li>
+								<li><span>Dashboard</span></li>
+							</ol>
+
+
+							<a class="sidebar-right-toggle"></a>
+						</div>
+					</header>
+
+					<!-- start: page -->
+					<div class="row admin-control">
+						<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 col-xs-12">
+							<div class="panel panel-primary">
+								<div class="panel-heading">Admin Controls</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/admin.php">
+												<i class="fa fa-user" aria-hidden="true"></i>
+												<h5>Manage Admins</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/admin_email.php"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+												<h5>Manage Emails</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/admin_logs.php">
+												<i class="fa fa-users" aria-hidden="true"></i></i>
+												<h5>View Members Logs</h5>
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/contest_export.php">
+												<i class="fa fa-upload" aria-hidden="true"></i>
+												<h5>Export Contest Spreadsheet</h5>
+											</a>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+							<div class="panel panel-primary">
+								<div class="panel-heading">MLM Controls</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/mlm_pulldown.php">
+												<i class="fa fa-cogs" aria-hidden="true"></i>
+												<h5>Manage MLM</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/commision_rules.php">
+												<i class="fa fa-cogs" aria-hidden="true"></i>
+												<h5>Manage Commision</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/mlm_export.php">
+												<i class="fa fa-cubes" aria-hidden="true"></i>
+												<h5>Export Tasks</h5>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+							<div class="panel panel-primary">
+								<div class="panel-heading">Ecommerce Controls</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/shop/admin/index.php">
+												<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+												<h5>Manage Shop</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/online_order.php">
+												<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+												<h5>Manage Customer / Quick Order</h5>
+											</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="row admin-control">
+						<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+							<div class="panel panel-primary">
+								<div class="panel-heading">STW Management</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/stw_reports.php">
+												<i class="fa fa-bar-chart" aria-hidden="true"></i>
+												<h5>STW Reports</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/csv_uploader_parser.php">
+												<i class="fa fa-upload" aria-hidden="true"></i>
+												<h5>Upload STW File</h5>
+											</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+							<div class="panel panel-primary">
+								<div class="panel-heading">Member Services</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/uploadpdf.php">
+												<i class="fa fa-file-text-o" aria-hidden="true"></i>
+												<h5>Manage Member Docs</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/newsletter.php">
+												<i class="fa fa-sticky-note-o" aria-hidden="true"></i>
+												<h5>Manage News Letter</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/news.php">
+												<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+												<h5>Manage News</h5>
+											</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/inquire.php">
+												<i class="fa fa-question-circle" aria-hidden="true"></i>
+												<h5>Manage STW Inquiries</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/inquire2.php">
+												<i class="fa fa-question-circle" aria-hidden="true"></i>
+												<h5>Manage Cruise Inquiries</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/mlm_errors.php">
+												<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+												<h5>MLM Error Types</h5>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+							<div class="panel panel-primary">
+								<div class="panel-heading">Import / Export Functions</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/csv_pulldowns.php">
+												<i class="fa fa-upload" aria-hidden="true"></i>
+												<h5>Export CSV's</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/bw_sync.php">
+												<i class="fa fa-refresh" aria-hidden="true"></i>
+												<h5>Synchronize w/BWGold</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/call_log.php">
+												<i class="fa fa-upload" aria-hidden="true"></i>
+												<h5>Import Call Log</h5>
+											</a>
+										</div>
+
+									</div>
+									<div class="row">
+
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/update_ec_id.php">
+												<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+												<h5>Update Ec ID</h5>
+											</a>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--  Other Services Start  -->
+
+					<div class="row other-services">
+						<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+							<div class="panel panel-primary">
+								<div class="panel-heading">Other Services</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/script4.php">
+												<i class="fa fa-male" aria-hidden="true"></i>
+												<h5>Adjust Non-Member Purchases</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/tools.php">
+												<i class="fa fa-tasks" aria-hidden="true"></i>
+												<h5>Tool Link Management</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/videos.php">
+												<i class="fa fa-file-video-o" aria-hidden="true"></i>
+												<h5>Video Link Management</h5>
+											</a>
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/set_global_password.php">
+												<i class="fa fa-key" aria-hidden="true"></i>
+												<h5>Set Global Password</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/per_member_commissions.php">
+												<i class="fa fa-user" aria-hidden="true"></i>
+												<h5>Per Member Commissions</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/newsletter_new.php">
+												<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+												<h5>Newsletter Management</h5>
+											</a>
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="http://www.sharethewealthsalons.com/forum/admin/index.php">
+												<i class="fa fa-cogs" aria-hidden="true"></i>
+												<h5>Discussion Forum Admin</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/logout.php">
+												<i class="fa fa-sign-out" aria-hidden="true"></i>
+												<h5>Logout Admin</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/fposts.php">
+												<i class="fa fa-sitemap" aria-hidden="true"></i>
+												<h5>Manage Forum Posts</h5>
+											</a>
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/ecco.php">
+												<i class="fa fa-bars" aria-hidden="true"></i>
+												<h5>ECCO Report</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/admin/cpco.php">
+												<i class="fa fa-bars" aria-hidden="true"></i>
+												<h5>CPCO Report</h5>
+											</a>
+										</div>
+										<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+											<a href="/price_updater.php">
+												<i class="fa fa-money" aria-hidden="true"></i>
+												<h5>Price Updater</h5>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+
+
+				</div>
+			</div>
+					<!-- end: page -->
+			</section>
+
+
+
+
+
+		<!-- Vendor -->
+		<script src="assets/vendor/jquery/jquery.js"></script>
+		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="assets/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->
+		<script src="assets/vendor/jquery-ui/jquery-ui.js"></script>
+		<script src="assets/vendor/jqueryui-touch-punch/jqueryui-touch-punch.js"></script>
+		<script src="assets/vendor/jquery-appear/jquery-appear.js"></script>
+		<script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+		<script src="assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
+		<script src="assets/vendor/flot/jquery.flot.js"></script>
+		<script src="assets/vendor/flot.tooltip/flot.tooltip.js"></script>
+		<script src="assets/vendor/flot/jquery.flot.pie.js"></script>
+		<script src="assets/vendor/flot/jquery.flot.categories.js"></script>
+		<script src="assets/vendor/flot/jquery.flot.resize.js"></script>
+		<script src="assets/vendor/jquery-sparkline/jquery-sparkline.js"></script>
+		<script src="assets/vendor/raphael/raphael.js"></script>
+		<script src="assets/vendor/morris.js/morris.js"></script>
+		<script src="assets/vendor/gauge/gauge.js"></script>
+		<script src="assets/vendor/snap.svg/snap.svg.js"></script>
+		<script src="assets/vendor/liquid-meter/liquid.meter.js"></script>
+		<script src="assets/vendor/jqvmap/jquery.vmap.js"></script>
+		<script src="assets/vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>
+		<script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>
+		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>
+		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>
+		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
+		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
+		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="assets/javascripts/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="assets/javascripts/theme.custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="assets/javascripts/theme.init.js"></script>
+
+		<!-- Examples -->
+		<script src="assets/javascripts/dashboard/examples.dashboard.js"></script>
+	</body>
+</html>
